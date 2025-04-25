@@ -10,7 +10,7 @@ public class KthMissingPositive {
 
     private static int kthMissingPositive(int[] arr, int k) {
         int value = 1; //kth positive number to be returned
-        int missNumber = 0; //index of missing number ,i.e, 1st missing number, 2nd missing number and so on...
+        int missNumber = 0; //index of missing number ,i.e, 1st missing number, 2nd missing number and so on upto Kth missing number
         int i = 0;
         while (missNumber <= k) {
             if ( i < arr.length && arr[i] == value) {

@@ -25,6 +25,7 @@ public class RotatedBinarySearch {
                 }
             }
             else {
+                //right half is sorted, check in it
                 if (target > arr[mid] && target <= arr[end])
                     start = mid + 1;
                 else

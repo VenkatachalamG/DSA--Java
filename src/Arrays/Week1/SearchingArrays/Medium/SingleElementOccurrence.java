@@ -11,7 +11,7 @@ public class SingleElementOccurrence {
         int start = 0, end = arr.length - 1;
         while (start <= end) {
             int mid = start + (end - start) / 2;
-            //To point to first Occurrence of a repeating pair of element mke sure mid is even
+            //To point to first Occurrence of a repeating pair of element make sure mid is even
             if (mid % 2 == 1)
                 mid--; //make mid even
             if (arr[mid] == arr[mid + 1])

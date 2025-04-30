@@ -20,14 +20,14 @@ public class RotatedBinarySearchII {
             else {
                 if (arr[start] <= arr[mid]) {
                     //left half is sorted, check in it
-                    if (target > arr[start] && target <= arr[mid])
+                    if (target >= arr[start] && target <= arr[mid])
                         end = mid - 1;
                     else
                         start = mid + 1;
                 }
                 else {
                     //right half is sorted, check in it
-                    if (target > arr[mid] && target <= arr[end])
+                    if (target >= arr[mid] && target <= arr[end])
                         start = mid + 1;
                     else
                         end = mid - 1;

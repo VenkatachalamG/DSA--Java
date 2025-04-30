@@ -13,21 +13,20 @@ public class NUniqueIntegers {
     }
 
     private static int[] nUniqueIntegers(int n) {
-        if (n == 1)
-            return new int[]{0};
-        Set<Integer> ans = new HashSet<>();
         int[] result = new int[n];
-        int sum = 0;
-        Random rand = new Random();
-        for (int i = 0; i < n - 1; i++) {
-            int num = rand.nextInt(1, 1001);
-            if (!ans.contains(num)) {
-                ans.add(num);
-                result[i] = num;
-            }
-            sum += num;
+        int index = 0;
+
+        // Generate pairs of positive and negative numbers
+        for (int i = 1; i <= n / 2; i++) {
+            result[index++] = i;
+            result[index++] = -i;
         }
-        result[n - 1] = -sum;
+
+        // If n is odd, include 0 in the result
+        if (n % 2 != 0) {
+            result[index] = 0;
+        }
+
         return result;
     }
 }

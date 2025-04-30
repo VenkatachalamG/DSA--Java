@@ -2,7 +2,7 @@ package Arrays.Week1.SearchingArrays.Medium;
 
 public class SingleElementOccurrence {
     public static void main(String[] args) {
-        int[] arr = {1,1,2,3,3,4,4};
+        int[] arr = {1,1,2};
         int ans = singleEleOccurrence(arr);
         System.out.println(ans);
     }
@@ -14,7 +14,7 @@ public class SingleElementOccurrence {
             //To point to first Occurrence of a repeating pair of element make sure mid is even
             if (mid % 2 == 1)
                 mid--; //make mid even
-            if (arr[mid] == arr[mid + 1])
+            if (mid + 1 < arr.length && arr[mid] == arr[mid + 1])
                 start = mid + 2;
             else
                 end = mid - 1;

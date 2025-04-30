@@ -17,7 +17,7 @@ public class RotatedBinarySearch {
 
             if (arr[start] <= arr[mid]) {
                 //left half is sorted, check in it
-                if (target > arr[0] && target <= arr[mid]) {
+                if (target > arr[start] && target <= arr[mid]) {
                     end = mid - 1;
                 }
                 else {

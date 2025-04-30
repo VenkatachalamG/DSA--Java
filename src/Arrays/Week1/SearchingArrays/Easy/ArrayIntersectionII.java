@@ -12,16 +12,18 @@ public class ArrayIntersectionII {
 
     private static int[] arrayIntersectionII(int[] arr1, int[] arr2) {
         Map<Integer, Integer> map1 = new HashMap<>();
-        for(int num : arr1) {
+        for (int num : arr1) {
             map1.put(num, map1.getOrDefault(num, 0) + 1);
         }
+
         List<Integer> result = new ArrayList<>();
-        for(int num : arr2) {
-            if (map1.containsKey(num)) {
+        for (int num : arr2) {
+            if (map1.containsKey(num) && map1.get(num) > 0) {
                 result.add(num);
-                map1.put(num, map1.getOrDefault(num, 0) - 1);
+                map1.put(num, map1.get(num) - 1);
             }
         }
+
         return result.stream().mapToInt(Integer::intValue).toArray();
     }
 }

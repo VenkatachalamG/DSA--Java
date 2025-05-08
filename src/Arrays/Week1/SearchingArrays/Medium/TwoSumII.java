@@ -1,4 +1,6 @@
-package Arrays.Week1.SearchingArrays.Easy;
+// https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
+
+package Arrays.Week1.SearchingArrays.Medium;
 
 import java.util.Arrays;
 

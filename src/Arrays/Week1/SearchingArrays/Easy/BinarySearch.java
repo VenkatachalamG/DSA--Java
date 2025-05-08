@@ -1,3 +1,5 @@
+// https://leetcode.com/problems/binary-search/
+
 package Arrays.Week1.SearchingArrays.Easy;
 
 public class BinarySearch {

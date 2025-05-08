@@ -1,3 +1,5 @@
+// https://leetcode.com/problems/kth-missing-positive-number/
+
 package Arrays.Week1.SearchingArrays.Easy;
 
 public class KthMissingPositive {

@@ -1,3 +1,5 @@
+// https://leetcode.com/problems/check-if-n-and-its-double-exist/
+
 package Arrays.Week1.SearchingArrays.Easy;
 
 import java.util.HashSet;

@@ -1,8 +1,10 @@
+// https://leetcode.com/problems/remove-duplicates-from-sorted-array/
+
 package Arrays.Week1.BasicArrays.Easy;
 
 import java.util.Arrays;
 
-public class RemoveDuplicates {
+public class RemoveDuplicatesSortedArray {
     public static void main(String[] args) {
         int[] arr = {0,0,1,1,1,2,2,3,3,4};
         int ans = removeDuplicates(arr);

@@ -1,3 +1,5 @@
+// https://leetcode.com/problems/minimum-cost-to-move-chips-to-the-same-position/
+
 package Arrays.Week1.BasicArrays.Easy;
 
 public class CoinChipsPosition {

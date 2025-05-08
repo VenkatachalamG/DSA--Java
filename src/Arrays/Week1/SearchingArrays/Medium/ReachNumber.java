@@ -1,3 +1,5 @@
+// https://leetcode.com/problems/reach-a-number/
+
 package Arrays.Week1.SearchingArrays.Medium;
 
 public class ReachNumber {

@@ -1,6 +1,6 @@
 // https://www.hackerrank.com/challenges/java-date-and-time/problem
 
-package Strings;
+package Strings.RegexProbs;
 
 import java.util.Calendar;
 import java.util.Locale;

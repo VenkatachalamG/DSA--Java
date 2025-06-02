@@ -1,6 +1,6 @@
 // https://www.hackerrank.com/challenges/java-regex/problem
 
-package Strings;
+package Strings.RegexProbs;
 
 class IPAddress {
 

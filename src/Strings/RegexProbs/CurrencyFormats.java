@@ -1,6 +1,6 @@
 // https://www.hackerrank.com/challenges/java-currency-formatter/problem
 
-package Strings;
+package Strings.RegexProbs;
 
 import java.text.NumberFormat;
 import java.util.Locale;
